@@ -3,7 +3,7 @@
 <details><summary>ЕГЭ мои ответы</summary>
 
    1. 58
-   1. 
+   1. YXZW
    1. 
    1.
    1.
