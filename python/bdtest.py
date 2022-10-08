@@ -1,30 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@NightSkymbry 
-lictpu
-/
-help
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-help/bdtest.py /
-@lictpu
-lictpu Update bdtest.py
-Latest commit 8c68702 4 days ago
- History
- 1 contributor
-81 lines (78 sloc)  6.33 KB
-
 import sqlite3
 def create():
    cur.execute("""CREATE TABLE IF NOT EXISTS users(
@@ -106,18 +79,3 @@ def sql():
 conn = sqlite3.connect('orders.db')
 cur = conn.cursor()
 sql()
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-lictpu/help
