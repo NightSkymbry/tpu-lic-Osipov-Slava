@@ -1,11 +1,10 @@
 # tpu-lic-Osipov-Slava
 ## Осипов Вячеслав
 
-<details><summary>Аккаунты:</summary>
-1.[wordpress](https://nightskumbry.wordpress.com/)
-1.[openprocessing](https://openprocessing.org/user/344087)
-1.[codepen](https://codepen.io/NightSkumbry/pen/YzLmOGW)
-</details>
+#### Аккаунты
+[wordpress](https://nightskumbry.wordpress.com/)
+[openprocessing](https://openprocessing.org/user/344087)
+[codepen](https://codepen.io/NightSkumbry/pen/YzLmOGW)
 
 ### Работы
 #### Код Хемминга
