@@ -3,6 +3,7 @@
 
 #### Закон Дистрибутивности (5)
 $$ (A \wedge B)\vee C = (A \vee C)\wedge(B\vee C) $$
+
 ![lagrida_latex_editor](https://user-images.githubusercontent.com/88902225/198812972-19670010-2712-4d4f-a392-623fbfef5c0e.png)
 
 #### Аккаунты
