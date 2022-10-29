@@ -1,6 +1,9 @@
 # tpu-lic-Osipov-Slava
 ## Осипов Вячеслав
 
+#### Закон Дистрибутивности (5)
+$$ (A \wedge B)\vee C = (A \vee C)\wedge(B\vee C) $$
+
 #### Аккаунты
 [wordpress](https://nightskumbry.wordpress.com/)
 
