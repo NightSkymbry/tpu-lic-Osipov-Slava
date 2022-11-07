@@ -1,10 +1,15 @@
 # tpu-lic-Osipov-Slava
 ## Осипов Вячеслав
 
+### Latex
+
 #### Закон Дистрибутивности (5)
 $$ (A \wedge B)\vee C = (A \vee C)\wedge(B\vee C) $$
 
 ![lagrida_latex_editor](https://user-images.githubusercontent.com/88902225/198812972-19670010-2712-4d4f-a392-623fbfef5c0e.png)
+
+#### Формула
+$$ \bar{E}^2_0=\sqrt{\frac{F\alpha_0^2}{(x\text{}-1)\cdot x}}+\alpha^2_1+\beta^2_1 $$
 
 #### Аккаунты
 [wordpress](https://nightskumbry.wordpress.com/)
