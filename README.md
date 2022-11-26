@@ -43,3 +43,8 @@ $$ \bar{E}^2_0=\sqrt{\frac{F\alpha_0^2}{(x\text{}-1)\cdot x}}+\alpha^2_1+\beta^2
 
 #### Рассчёт любой неизвестной по двум другим из уравнения веса символа (I = i * k)
 [python/text_weight.py](https://github.com/NightSkymbry/tpu-lic-Osipov-Slava/blob/main/python/text_weight.py)
+
+#### Папка с программой, генерирующей кадры при помощи PIL и собирающая из них видео.
+[python/pil](https://github.com/NightSkymbry/tpu-lic-Osipov-Slava/blob/main/python/pil)
+- Картинка [ball.png](https://github.com/NightSkymbry/tpu-lic-Osipov-Slava/blob/main/python/pil/ball.png) необходима для создания анимации.
+- [video.mp4](https://github.com/NightSkymbry/tpu-lic-Osipov-Slava/blob/main/python/pil/video.mp4) является одним из результатов работы кода.

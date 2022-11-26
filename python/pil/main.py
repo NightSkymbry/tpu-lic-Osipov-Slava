@@ -7,12 +7,12 @@ from moviepy.editor import ImageClip, concatenate_videoclips
 
 @dataclass
 class const:
-    img_size: tuple[int] = (1000, 1000)
-    ball_size: tuple[int] = (150, 150)
+    img_size: tuple[int, int] = (1000, 1000)
+    ball_size: tuple[int, int] = (150, 150)
     bg_color: tuple[str] = ('#f3c7ba')
-    frames: int = 200
-    folder: str = './1'
-    video_name: str = './1.mp4'
+    frames: int = 1800
+    folder: str = './photoes'
+    video_name: str = './video.mp4'
 
 
 class Ball:
@@ -24,12 +24,11 @@ class Ball:
 
         self.posy_r = self.posy + const.ball_size[1]
 
-        self.velx = randint(-250, 250)/50
-        self.vely = randint(-250, 250)/50
+        self.velx = randint(-250, 250) / 50
+        self.vely = randint(-250, 250) / 50
 
-    def get_pos(self) -> tuple[int]:
+    def get_pos(self) -> tuple[int, int]:
         return int(self.posx), int(self.posy)
-
 
     def run(self) -> None:
         self.add('x', self.velx)
@@ -72,13 +71,13 @@ def create_photoes() -> None:
 
 
 def make_video():
-    phts = [ImageClip(f'./{const.folder}/{m}.png') for m in range(const.frames)]
+    phts = [ImageClip(f'./{const.folder}/{m}.png').set_duration(1/60) for m in range(const.frames)]
     clip = concatenate_videoclips(phts, method='compose')
     clip.write_videofile(const.video_name, fps=60)
 
 
 def main() -> None:
-    create_photoes()
+    # create_photoes()
     make_video()
 
 
