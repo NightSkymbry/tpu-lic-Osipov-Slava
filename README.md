@@ -39,9 +39,12 @@ $$ \bar{E}^2_0=\sqrt{\frac{F\alpha_0^2}{(x\text{}-1)\cdot x}}+\alpha^2_1+\beta^2
 
 #### Таблица умножения по заданной системе счисления
 Требует установки pandas "pip install pandas"
+
 [python/multyply_table](https://github.com/NightSkymbry/tpu-lic-Osipov-Slava/blob/main/python/multyply_table.py)
 
 #### Рассчёт любой неизвестной по двум другим из уравнения веса символа (I = i * k)
+Требует установки PyQt6 "pip install pyqt6"
+
 [python/text_weight.py](https://github.com/NightSkymbry/tpu-lic-Osipov-Slava/blob/main/python/text_weight.py)
 
 #### Папка с программой, генерирующей кадры при помощи PIL и собирающая из них видео.
