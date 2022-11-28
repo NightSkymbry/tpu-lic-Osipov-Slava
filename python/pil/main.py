@@ -77,7 +77,7 @@ def make_video():
 
 
 def main() -> None:
-    # create_photoes()
+    create_photoes()
     make_video()
 
 
