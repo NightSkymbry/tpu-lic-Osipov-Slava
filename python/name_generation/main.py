@@ -99,10 +99,17 @@ if __name__ == "__main__":
     while True:
         Names = main()
 
-        print(f'''
+        while True:
+            print(f'''
 Итоговый никнэйм - "{oppening(ending(Names))}"
         ''')
-        time.sleep(0.2)
+            time.sleep(0.2)
+            if input('''Хотите другой вариант?
+1 ---- Да
+не 1 - Нет
+-> ''').strip() != '1':
+                break
+
         if input('''Хотите попробовать ещё?
 1 ---- Нет
 не 1 - Да
