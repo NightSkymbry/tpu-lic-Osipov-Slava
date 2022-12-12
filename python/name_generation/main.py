@@ -17,11 +17,10 @@ def test_for(subject: any,  filter_: Iterable, ttype: int) -> tuple[bool, list[A
     x = False
     r = []
     for i in filter_:
-        match ttype:
-            case 1:
-                if i in subject:
-                    x = True
-                    r.append(i)
+        if ttype == 1:
+            if i in subject:
+                x = True
+                r.append(i)
     return x, r
 
 
@@ -46,8 +45,7 @@ def split_by_syllable(string: str) -> list[str]:
     return ans
 
 
-def main():
-    name = input('\n\nВведите ваше имя\n-> ')
+def main(name):
     Name = split_by_syllable(name)
     for index, i in enumerate(Name):
         if test_for(i, consonat, 1)[0]:
@@ -66,15 +64,14 @@ def change_consonate(slog: str):
 
 def ending(Names):
     shiiish = random.randint(0, 2)
-    match shiiish:
-        case 0:
-            endingusus = str(random.randint(99, 999))
-            Namesplus = Names + "_" + endingusus
-        case 1:
-            endingusus = str(random.randint(1, 9))
-            Namesplus = Names + "_" + "200" + endingusus
-        case 2:
-            Namesplus = Names + random.choice(otstavki)
+    if shiiish == 0:
+        endingusus = str(random.randint(99, 999))
+        Namesplus = Names + "_" + endingusus
+    elif shiiish == 1:
+        endingusus = str(random.randint(1, 9))
+        Namesplus = Names + "_" + "200" + endingusus
+    elif shiiish == 2:
+        Namesplus = Names + random.choice(otstavki)
     return Namesplus
 
 
@@ -97,11 +94,10 @@ if __name__ == "__main__":
 Далее ->>''')
 
     while True:
-        Names = main()
-
+        Names = input('\n\nВведите ваше имя\n-> ')
         while True:
             print(f'''
-Итоговый никнэйм - "{oppening(ending(Names))}"
+Итоговый никнэйм - "{oppening(ending(main(Names)))}"
         ''')
             time.sleep(0.2)
             if input('''Хотите другой вариант?
@@ -110,7 +106,8 @@ if __name__ == "__main__":
 -> ''').strip() != '1':
                 break
 
-        if input('''Хотите попробовать ещё?
+        if input('''
+Хотите попробовать ещё?
 1 ---- Нет
 не 1 - Да
 -> ''').strip() == '1':
