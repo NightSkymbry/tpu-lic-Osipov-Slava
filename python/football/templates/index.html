@@ -38,13 +38,37 @@
                             <td>{{ team.team }}</td>
                             <td>{{ team.games_order[1] }}</td>
                             <td>{{ team.games[team.games_order[1]]['goals'] }}:{{ team.games[team.games_order[1]]['falls'] }}</td>
-                            <td>{{ team.games[team.games_order[1]]['result'] }}</td>
+                            {% if team.games[team.games_order[1]]['result'] == 'win' -%}
+                                <td><img alt="Победа" src="{{ url_for('static',filename='images/win.svg') }}"></td>
+                            {% elif team.games[team.games_order[1]]['result'] == 'lose' -%}
+                                <td><img alt="Поражение" src="{{ url_for('static',filename='images/lose.svg') }}"></td>
+                            {% elif team.games[team.games_order[1]]['result'] == 'draw' -%}
+                                <td><img alt="Ничья" src="{{ url_for('static',filename='images/draw.svg') }}"></td>
+                            {% else -%}
+                                <td><img alt="Нет данных" src="{{ url_for('static',filename='images/no_data.svg') }}"></td>
+                            {% endif %}
                             <td>{{ team.games_order[2] }}</td>
                             <td>{{ team.games[team.games_order[2]]['goals'] }}:{{ team.games[team.games_order[2]]['falls'] }}</td>
-                            <td>{{ team.games[team.games_order[2]]['result'] }}</td>
+                            {% if team.games[team.games_order[2]]['result'] == 'win' -%}
+                                <td><img alt="Победа" src="{{ url_for('static',filename='images/win.svg') }}"></td>
+                            {% elif team.games[team.games_order[2]]['result'] == 'lose' -%}
+                                <td><img alt="Поражение" src="{{ url_for('static',filename='images/lose.svg') }}"></td>
+                            {% elif team.games[team.games_order[2]]['result'] == 'draw' -%}
+                                <td><img alt="Ничья" src="{{ url_for('static',filename='images/draw.svg') }}"></td>
+                            {% else -%}
+                                <td><img alt="Нет данных" src="{{ url_for('static',filename='images/no_data.svg') }}"></td>
+                            {% endif %}
                             <td>{{ team.games_order[3] }}</td>
                             <td>{{ team.games[team.games_order[3]]['goals'] }}:{{ team.games[team.games_order[3]]['falls'] }}</td>
-                            <td>{{ team.games[team.games_order[3]]['result'] }}</td>
+                            {% if team.games[team.games_order[3]]['result'] == 'win' -%}
+                                <td><img alt="Победа" src="{{ url_for('static',filename='images/win.svg') }}"></td>
+                            {% elif team.games[team.games_order[3]]['result'] == 'lose' -%}
+                                <td><img alt="Поражение" src="{{ url_for('static',filename='images/lose.svg') }}"></td>
+                            {% elif team.games[team.games_order[3]]['result'] == 'draw' -%}
+                                <td><img alt="Ничья" src="{{ url_for('static',filename='images/draw.svg') }}"></td>
+                            {% else -%}
+                                <td><img alt="Нет данных" src="{{ url_for('static',filename='images/no_data.svg') }}"></td>
+                            {% endif %}
                             <td>{{ team.goals_total }}:{{ team.falls_total }}</td>
                             <td>{{ team.points }}</td>
                         </tr>
