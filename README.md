@@ -63,3 +63,14 @@ $$ \bar{E}^2_0=\sqrt{\frac{F\alpha_0^2}{(x\text{}-1)\cdot x}}+\alpha^2_1+\beta^2
 [python/pil](https://github.com/NightSkymbry/tpu-lic-Osipov-Slava/blob/main/python/pil)
 - Картинка [ball.png](https://github.com/NightSkymbry/tpu-lic-Osipov-Slava/blob/main/python/pil/ball.png) необходима для создания анимации.
 - [video.mp4](https://github.com/NightSkymbry/tpu-lic-Osipov-Slava/blob/main/python/pil/video.mp4) является одним из результатов работы кода.
+
+#### Генератор никнеймов
+[python/neme_generation/main.py](https://github.com/NightSkymbry/tpu-lic-Osipov-Slava/blob/main/python/name_generation/main.py)
+
+#### Викторина, моё испонение
+Требует:
+- Установку PyQt6 "pip install pyqt6"
+- Создание в рабочей директории исполняемого файла подкатолога units
+- Добавление и заполнение хотя бы одного .csv файла в данный каталог ([примеры](https://github.com/NightSkymbry/tpu-lic-Osipov-Slava/blob/main/python/victorina/units))
+
+[python/victorina/main.py](https://github.com/NightSkymbry/tpu-lic-Osipov-Slava/blob/main/python/victorina/main.py)

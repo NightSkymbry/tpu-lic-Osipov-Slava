@@ -1,0 +1,14 @@
+table {
+    margin-top: 30px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td {
+    border: 1px solid #a2a9b1;
+    padding: 0.2em 0.4em;
+}
+
+tr.header {
+    background-color: #eaecf0;
+}

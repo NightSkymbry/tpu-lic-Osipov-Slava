@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Football</title>
+        {% block head %}
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="{{ url_for('static',filename='styles/styles.css') }}" type="text/css"/>
+        {% endblock %}
+    </head>
+    <body>
+        {% for group_name, group in groups.items() -%}
+            <table>
+                <caption>
+                    <b>{{ group_name }}</b>
+                </caption>
+                <tbody>
+                    <tr class="header">
+                        <td rowspan="2" valign="center">Команда</td>
+                        <td colspan="3">Игра №1</td>
+                        <td colspan="3">Игра №2</td>
+                        <td colspan="3">Игра №3</td>
+                        <td rowspan="2" valign="center">Мячи</td>
+                        <td rowspan="2" valign="center">Очки</td>
+                    </tr>
+                    <tr class="header">
+                        <td>Соперник</td>
+                        <td>Счёт</td>
+                        <td>Итог</td>
+                        <td>Соперник</td>
+                        <td>Счёт</td>
+                        <td>Итог</td>
+                        <td>Соперник</td>
+                        <td>Счёт</td>
+                        <td>Итог</td>
+                    </tr>
+                    {% for team in group -%}
+                        <tr>
+                            <td>{{ team.team }}</td>
+                            <td>{{ team.games_order[1] }}</td>
+                            <td>{{ team.games[team.games_order[1]]['goals'] }}:{{ team.games[team.games_order[1]]['falls'] }}</td>
+                            <td>{{ team.games[team.games_order[1]]['result'] }}</td>
+                            <td>{{ team.games_order[2] }}</td>
+                            <td>{{ team.games[team.games_order[2]]['goals'] }}:{{ team.games[team.games_order[2]]['falls'] }}</td>
+                            <td>{{ team.games[team.games_order[2]]['result'] }}</td>
+                            <td>{{ team.games_order[3] }}</td>
+                            <td>{{ team.games[team.games_order[3]]['goals'] }}:{{ team.games[team.games_order[3]]['falls'] }}</td>
+                            <td>{{ team.games[team.games_order[3]]['result'] }}</td>
+                            <td>{{ team.goals_total }}:{{ team.falls_total }}</td>
+                            <td>{{ team.points }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% endfor %}
+    </body>
+</html>
