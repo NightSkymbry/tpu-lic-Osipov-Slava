@@ -1,6 +1,12 @@
 # tpu-lic-Osipov-Slava
 ## Осипов Вячеслав
 
+___
+# Что нового
+- Небольшие изменения в `readme.md`
+- Перемещение проекта с [футбольной статистикой](#Статистика-группового-этапа-ЧМ-по-футболу) на отдельный репозиторий
+___
+
 ### mermaid
 ```mermaid
 flowchart LR
@@ -23,7 +29,7 @@ $$ (A \wedge B)\vee C = (A \vee C)\wedge(B\vee C) $$
 #### Формула
 $$ \bar{E}^2_0=\sqrt{\frac{F\alpha_0^2}{(x\text{}-1)\cdot x}}+\alpha^2_1+\beta^2_1 $$
 
-#### Аккаунты
+### Аккаунты
 [wordpress](https://nightskumbry.wordpress.com/)
 
 [openprocessing](https://openprocessing.org/user/344087)
@@ -50,12 +56,12 @@ $$ \bar{E}^2_0=\sqrt{\frac{F\alpha_0^2}{(x\text{}-1)\cdot x}}+\alpha^2_1+\beta^2
 [python/morze_rus.py](https://github.com/NightSkymbry/tpu-lic-Osipov-Slava/blob/main/python/morze_rus.py)
 
 #### Таблица умножения по заданной системе счисления
-Требует установки pandas "pip install pandas"
+Требует установки pandas `pip install pandas`
 
 [python/multyply_table](https://github.com/NightSkymbry/tpu-lic-Osipov-Slava/blob/main/python/multyply_table.py)
 
 #### Рассчёт любой неизвестной по двум другим из уравнения веса символа (I = i * k)
-Требует установки PyQt6 "pip install pyqt6"
+Требует установки PyQt6 `pip install pyqt6`
 
 [python/text_weight.py](https://github.com/NightSkymbry/tpu-lic-Osipov-Slava/blob/main/python/text_weight.py)
 
@@ -69,8 +75,11 @@ $$ \bar{E}^2_0=\sqrt{\frac{F\alpha_0^2}{(x\text{}-1)\cdot x}}+\alpha^2_1+\beta^2
 
 #### Викторина, моё испонение
 Требует:
-- Установку PyQt6 "pip install pyqt6"
+- Установку PyQt6 `pip install pyqt6`
 - Создание в рабочей директории исполняемого файла подкатолога units
 - Добавление и заполнение хотя бы одного .csv файла в данный каталог ([примеры](https://github.com/NightSkymbry/tpu-lic-Osipov-Slava/blob/main/python/victorina/units))
 
 [python/victorina/main.py](https://github.com/NightSkymbry/tpu-lic-Osipov-Slava/blob/main/python/victorina/main.py)
+
+#### Статистика группового этапа ЧМ по футболу
+[Отдельный репозиторий](https://github.com/NightSkymbry/football_site)
